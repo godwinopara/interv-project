@@ -1,0 +1,29 @@
+.tab__content__wrapper {
+	min-height: 100vh;
+	background-size: cover;
+	background-position: top;
+	padding-top: 100px;
+}
+
+.tab__content {
+	background: white;
+	width: 350px;
+	margin-left: 50px;
+	padding: 20px 35px 30px;
+}
+
+.tab__content h2 {
+	color: #404f6c;
+	font-size: 2.5rem;
+}
+
+.tab__content p {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.tab__content > :nth-child(3),
+.tab__content > :nth-child(4) {
+	margin-bottom: 30px;
+}

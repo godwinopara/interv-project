@@ -1,0 +1,9 @@
+/* header-bg relative py-5 min-h-screen */
+.header {
+	background-image: url("../assets/hero-bg-min.jpg");
+	background-position: top;
+	background-size: cover;
+	position: relative;
+	min-height: 100vh;
+	padding: 20px 0;
+}
