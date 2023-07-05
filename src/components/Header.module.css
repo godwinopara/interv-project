@@ -5,13 +5,12 @@
 	background-position: bottom;
 	background-size: cover;
 	position: relative;
-	min-height: 75vh;
+	min-height: 70vh;
 	padding: 20px 0;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
 	.header {
-		background-image: url("../assets/hero-bg-min.jpg");
 		background-position: top;
 		min-height: 100vh;
 		padding: 20px 0;

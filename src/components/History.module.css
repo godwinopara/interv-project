@@ -2,7 +2,7 @@
 	background-image: url("../assets/history-bg.png");
 	background-position: top;
 	background-size: cover;
-	min-height: 100vh;
+	min-height: 80vh;
 	padding-top: 80px;
 	position: relative;
 	overflow-x: hidden;
@@ -52,7 +52,10 @@
 	background-color: #687896;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
+	.history {
+		min-height: 50vh;
+	}
 	.history p {
 		margin-top: 15px;
 		margin-left: 60px;
@@ -64,5 +67,11 @@
 
 	.heading__number {
 		font-size: 10rem;
+	}
+}
+
+@media screen and (min-width: 1100px) {
+	.history {
+		min-height: 100vh;
 	}
 }

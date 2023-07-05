@@ -55,7 +55,7 @@
 	font-weight: 700;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
 	.tab {
 		display: block;
 	}
@@ -68,6 +68,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		margin-bottom: 0;
 	}
 
 	.heading__number {
@@ -96,13 +97,13 @@
 		background: #b0b4be;
 		color: #404f6c;
 	}
-
+	/* 
 	.tab__content__wrapper {
 		min-height: 100vh;
 		background-size: cover;
 		background-position: top;
 		padding-top: 100px;
-	}
+	} */
 
 	.tab__content {
 		background: white;

@@ -42,7 +42,7 @@
 	margin-top: 20px;
 }
 
-@media screen and(min-width:1024px) {
+@media screen and (min-width: 768px) {
 	.footer__wrapper {
 		display: flex;
 		align-items: center;
