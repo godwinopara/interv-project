@@ -32,14 +32,6 @@ const History = () => {
 				</p>
 			</div>
 			<div className={styles.thumbnail}>
-				{/* <div className={styles.thumbnail__wrapper}>
-					<img src={thumbnailImg1} alt="thumbnail of a man standing on a rock" />
-					<img src={thumbnailImg2} alt="thumbnail of a rock covered in with cloud" />
-					<img src={thumbnailImg1} alt="thumbnail of a man standing on a rock" />
-					<img src={thumbnailImg2} alt="thumbnail of a rock covered in with cloud" />
-					<img src={thumbnailImg1} alt="thumbnail of a man standing on a rock" />
-					<img src={thumbnailImg2} alt="thumbnail of a rock covered in with cloud" />
-				</div> */}
 				<Carousel images={images} />
 			</div>
 		</section>

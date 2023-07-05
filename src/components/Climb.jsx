@@ -4,6 +4,7 @@ import Tab from "./Tab";
 
 const Climb = () => {
 	const [tabToShow, setTabToShow] = useState({ tab1: true, tab2: false });
+	const [accordionToShow, setAccordionToShow] = useState({ accordion1: true, accordion2: false });
 
 	const tab1 = [
 		{ date: "25 Nov 2016", text: "Vestibulum viverra" },
@@ -26,6 +27,13 @@ const Climb = () => {
 		setTabToShow({ tab1: false, tab2: true });
 	};
 
+	const handleClickToggleAccordion1 = () => {
+		setAccordionToShow({ accordion1: true, accordion2: false });
+	};
+	const handleClickToggleAccordion2 = () => {
+		setAccordionToShow({ accordion1: false, accordion2: true });
+	};
+
 	return (
 		<section>
 			<div className="container">
@@ -45,8 +53,7 @@ const Climb = () => {
 			</div>
 
 			{/* Tab */}
-
-			<section>
+			<section className={styles.tab}>
 				<div className={styles.tab__wrapper}>
 					<ul className={styles.tab__nav} id="myTab" role="tablist">
 						<li onClick={handleClickToggleTab1} className={tabToShow.tab1 ? styles.active : ""}>
@@ -59,9 +66,20 @@ const Climb = () => {
 				</div>
 
 				{/* Tab content */}
-
 				{tabToShow.tab1 && <Tab contents={tab1} classname={styles.tab1__bgImg} />}
 				{tabToShow.tab2 && <Tab contents={tab2} classname={styles.tab2__bgImg} />}
+			</section>
+
+			{/* ACCORDION */}
+			<section className={`${styles.accordion} container`}>
+				<div>
+					<button onClick={handleClickToggleAccordion1}>MOUNTAIN 1</button>
+					{accordionToShow.accordion1 && <Tab contents={tab1} classname={styles.tab1__bgImg} />}
+				</div>
+				<div>
+					<button onClick={handleClickToggleAccordion2}>MOUNTAIN 2</button>
+					{accordionToShow.accordion2 && <Tab contents={tab2} classname={styles.tab2__bgImg} />}
+				</div>
 			</section>
 		</section>
 	);

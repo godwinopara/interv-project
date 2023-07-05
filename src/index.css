@@ -17,9 +17,19 @@ h2 {
 	font-family: "Bebas Neue", sans-serif;
 }
 
+li,
+ul,
+a {
+	list-style: none;
+	text-decoration: none;
+	color: inherit;
+}
+
 .container {
 	max-width: 900px;
 	margin: auto;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 /* Overwrite default swipper css styles */

@@ -6,8 +6,8 @@ const Tab = ({ contents, classname }) => {
 			<div className="container">
 				<div className={`${styles.tab__content}`}>
 					<h2>SCHEDULE</h2>
-					{contents.map((content) => (
-						<p>
+					{contents.map((content, id) => (
+						<p key={id}>
 							{content.date} <span>{content.text}</span>
 						</p>
 					))}

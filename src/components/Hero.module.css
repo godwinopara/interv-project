@@ -1,19 +1,18 @@
 .hero__wrapper {
-	/* relative z-10 text-center mt-28 */
 	position: relative;
 	z-index: 10;
 	text-align: center;
-	margin-top: 7rem;
-}
-
-.hero__wrapper h1 {
-	font-size: 7.5rem;
-	line-height: 1;
-	letter-spacing: 0.1em;
+	margin-top: 9rem;
 }
 
 .hero__wrapper span {
 	display: block;
+}
+
+.hero__wrapper h1 {
+	font-size: 3.5rem;
+	line-height: 1;
+	letter-spacing: 0.1em;
 }
 
 .hero__wrapper h1 > :nth-child(1) {
@@ -22,4 +21,12 @@
 
 .hero__wrapper h1 > :nth-child(2) {
 	color: #404f6c;
+}
+
+@media screen and (min-width: 1024px) {
+	.hero__wrapper h1 {
+		font-size: 7.5rem;
+		line-height: 1;
+		letter-spacing: 0.1em;
+	}
 }

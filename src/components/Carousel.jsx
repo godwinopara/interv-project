@@ -9,16 +9,15 @@ import "swiper/css/pagination";
 const Carousel = ({ images }) => {
 	return (
 		<Swiper
-			slidesPerView="auto"
-			spaceBetween={20}
-			slidesPerView={4}
+			slidesPerView={1}
 			pagination={{ clickable: true }}
 			modules={[Pagination]}
+			breakpoints={{ 1024: { slidesPerView: 4, spaceBetween: 20 } }}
 			className={styles.image__wrapper}
 		>
-			{images.map((image) => {
+			{images.map((image, id) => {
 				return (
-					<SwiperSlide>
+					<SwiperSlide key={id}>
 						<img src={image.src} alt={image.alt} />
 					</SwiperSlide>
 				);
